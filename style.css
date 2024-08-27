@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/*SEECIONES PRINCIPALÑES*/
+*{
+    background: #F3F5FC;
+   
+}
+.header{
+    margin-bottom: 50px;
+    width: 60%;
+}
+
+.header__logo{
+    width: 120px;
+    height: 48px;
+}
+
+
+.Main__Textos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Seccion__Texto__Area{
+    border: none;
+    color: #0A3871;
+
+}
+
+.Primera__Seccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80dvh;
+   
+}
+
+
+/*TEXTOS EN AREA*/
+
+.Seccion__Texto__Area{
+    width: 100%;
+    max-width:577px; /*ancho del text area*/
+    border-color: transparent; /*color del borde*/
+    max-height: 50dvh; /*largo del text area*/
+    height: auto;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 32px;
+    outline: none; /* Importante , quita el borde que sale al apretar el text area ya sea en modo navegador o inspecionar*/
+    background-color: transparent;
+    color: #0A3871;
+    margin-bottom: 30px;
+
+}
+
+::placeholder{
+    color: #0A3871;
+}
+
+.Textos_Precaucion{
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 12px;
+    gap: 10px;
+    border: 1px solid #0A3871;
+    margin-bottom: 20px; /*conviene seperar de otros objetos*/
+}
+
+.Texto__Botones{
+    display: flex;
+    gap:30px
+    
+}
+
+.Texto__Botones__Encriptar{
+    width: 328px;
+    height: 67;
+    padding: 24px;
+    border-radius: 24px;
+    color: white;
+    
+    border: 1px solid #0A3871;
+    background-color: #0A3871;
+
+
+}
+
+.Texto__Botones__Desencriptar{
+    width: 328px;
+    height: 67;
+    padding: 24px;
+    border-radius: 24px;
+    color:#0A3871;
+    border: 1px solid #0A3871;
+    background-color:transparent;
+}
+.Texto__Botones__Copiar{
+    width: 328px;
+    height: 67;
+    padding: 24px;
+    border-radius: 24px;
+    color: #0A3871;
+    background-color: transparent;
+    border: 1px solid #0A3871;
+}
+
+/*SECCION 2*/
+    .Segunda_Seccion{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        max-height: 110 dvh;
+        height: auto;
+        border-radius: 32px;
+        max-width:400px;
+        width: 100%; /*HAGO QUE OCUPE EL 100 POOR CIENTO DE LA PANTALLA , mientras es adaptada*/
+        
+
+    }
+
+    .Segunda_Seccion__Contenido__Mensaje{
+        color: #343A40;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-size: 24px;
+
+    }
+
+    .Parrafo{
+        color: #343A40;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 40px;
+    }
+    .Segunda_Seccion__Imagen{
+        display: block;
+    }
+
+    .hidden{
+        display: none;          /*MANTENO OCULTO EL BOTON copiar*/
+    }
+
+    .Footer__Desarrollador{
+        margin-top: 30px;
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        background-color: #343A40;
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-size: 24px;
+    ;
+
+    }
+
+    /*adaptacion*/
+    /*Los breakpoints CSS son puntos de
+     quiebre definidos en el código del sitio web donde el contenido cambia o responde según el ancho de pantalla del dispositivo*/
+
+    @media screen and (max-width:800px){
+       .Main__Textos{
+        flex-direction: column;
+       }
+       .Segunda_Seccion__Imagen{
+        display: none;
+    }
+        .Segunda_Seccion{
+            height: auto;
+            max-width: 624px;
+            margin-top: 30px;
+            min-height: 186px;
+            
+        }
+        .Segunda_Seccion__Contenido{
+            justify-content: center;
+        }
+                
+
+                
+        .Texto__Botones{
+            display: flex;
+        
+            gap:30px;
+            justify-content:center;
+            flex-wrap: wrap;
+            
+        }
+
+        .header__logo{
+            width: 35px;
+            height: 20px;
+        }
+
+    }

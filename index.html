@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<link rel="stylesheet" href="style.css">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+</head>
+
+<header class="header">
+    <img src="/Imagenes/Logo.png" alt="Logo de Alura" class="header__logo">
+    <!--<h1 class="header__Titulo">Encriptador De Textos</h1>-->
+</header>
+
+<body>
+    <main class="Main__Textos">
+        <form class="Primera__Seccion">
+            <textarea  class="Seccion__Texto__Area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="Textos_Precaucion">
+                    <img src="./Imagenes/Group.png" alt="Mensaje-De-Precaucion"/><span>Solo letras minúsculas y sin acentos</span> <!--asi agrego el mensaje al aldo de la imagen-->
+                    
+                </div>       
+                <div class="Texto__Botones">
+                
+                    <button class="Texto__Botones__Encriptar">Encriptar</button>
+                    <button class="Texto__Botones__Desencriptar">Desencriptar</button>
+                </div>
+        </form>
+
+        <aside class="Segunda_Seccion">
+            <img src="./Imagenes/Muñeco.png" alt="Personaje_buscando" class="Segunda_Seccion__Imagen">
+            <div class="Segunda_Seccion__Contenido">
+                
+                <h2 class="Segunda_Seccion__Contenido__Mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="resultado" class="Parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="Texto__Botones__Copiar hidden">Copiar</button>
+
+            </div>
+
+        </aside>
+                
+    </main>
+  <footer class="Footer__Desarrollador">Creado Por Arguello Nahuel Isaias</footer>  
+
+  <script src="scrip.js"></script>
+
+</body>
+
+</html>
+    
